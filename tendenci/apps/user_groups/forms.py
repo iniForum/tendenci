@@ -11,6 +11,7 @@ from tendenci.apps.user_groups.utils import member_choices
 from tendenci.apps.perms.forms import TendenciBaseForm
 from tendenci.apps.entities.models import Entity
 from tendenci.apps.site_settings.utils import get_setting
+#from tendenci.libs.tinymce.widgets import TinyMCE
 
 
 SEARCH_CATEGORIES = (
@@ -234,6 +235,7 @@ class MessageForm(forms.Form):
     from_addr = forms.CharField(label=_(u'From'))
     subject = forms.CharField()
     body = forms.CharField(widget=forms.Textarea)
+#    body = forms.CharField(widget=TinyMCE(attrs={'style':'width:100%'}))
     is_test = forms.BooleanField(label=_(u'Send test email to me only'), required=False, initial=True)
 
     def __init__(self, *args, **kwargs):
