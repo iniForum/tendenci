@@ -1,3 +1,24 @@
+### 12.4.7 [2021-03-10]
+
+* Adjusted the order of fields for event location section on events add/edit
+* Updated the help text of some fields for custom forms.
+* Added an option (/settings/module/users/#id_showindustry) to show industry on profiles search and view.
+* Added the industry field to resumes.
+* Fixed an issue about tinymce fullscreen not working properly on event organizer, location and speaker
+* Fixed some issues in events edit when changes applied to all recurring events in series.
+
+
+### 12.4.6 [2021-03-03]
+
+* Fixed a KeyError for resumes add at admin backend 
+* Adjusted video description on videos search to resolve a layout issue.
+* The associated recurrent payments, if any, now shows on user profiles.
+* Avoided users with recurrent payments being deleted 
+* Tracked errors with logging for the management command `make_recurring_payment_transactions`.
+* Removed wp_importer and wp_exporter 
+* Fixed an AttributeError in newsletters. 
+
+
 ### 12.4.5 [2021-03-01]
 
 * Added affiliations functionality in directories.
